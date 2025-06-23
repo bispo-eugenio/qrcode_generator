@@ -15,7 +15,7 @@ MAIN_PATH = Path(__file__).parents[2]
 
 STYLE_MAIN_WINDOW = """
     background-color: #034159;
-    border-color: #025951;
+    border: 3.5px solid #025951;
 """
 
 # =====================
@@ -23,4 +23,19 @@ STYLE_MAIN_WINDOW = """
 # =====================
 
 WIDTH = 600
-HEIGTH = 400
+HEIGTH = 800
+
+# ====================
+# Style do Display
+# ====================
+
+STYLE_DISPLAY = """
+    background-color: #FFFFFF;
+    border: 3.5px solid #025951;
+"""
+
+# ==================
+# Tamanho do QR Code
+# ==================
+
+SIZE_QRCODE = 290 #1 polegada convertido em pixels 115

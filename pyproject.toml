@@ -7,9 +7,9 @@ license = "MIT"
 requires-python = ">=3.13"
 authors =[{name="Eugênio Bispo", email="bispoeugenio@gmail.com"}]
 dependencies = [
+    "pillow>=11.2.1",
     "pyside6>=6.9.1",
     "qrcode[pil]>=8.2",
-
 ]
 
 [project.optional-dependencies]
