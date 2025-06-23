@@ -1,0 +1,76 @@
+[project]
+name = "qrcode-generator"
+version = "0.1.0"
+description = "A python application to generator QR Code for links using PySide6"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+authors =[{name="Eugênio Bispo", email="bispoeugenio@gmail.com"}]
+dependencies = [
+    "pyside6>=6.9.1",
+    "qrcode[pil]>=8.2",
+
+]
+
+[project.optional-dependencies]
+dev =["ruff", "pyright>=1.1.402",]
+
+
+[project.scripts]
+qrcode_generator = "my_package:main:main"
+
+# ====================
+# Configurações do Ruff
+# ====================
+
+[tool.ruff]
+line-length = 88 #Tamanho da linha
+target-version = "py313" #Versão do Python
+fix = true #Correção automática durante a execução
+show-fixes = true #Mostra o erros corrigidos
+indent-width = 4 #Número de espaços por nível de recuo
+exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__"] #Ruff não verifica
+
+[tool.ruff.lint]
+select = [
+    "ERA", 
+    "B",
+    "A",
+    "COM",
+    "BLE",
+    "SIM",
+    "E",
+    "RET",
+    "UP",
+    "N",
+    "Q",
+    "ANN"
+]
+
+ignore =["COM819", "ANN002", "ANN003"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["my_package"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["ANN201"]
+
+# ====================
+# Configurações do Pyright
+# ====================
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.13"
+include = ["src", 'tests']
+exclude = [
+    "**/venv",
+    "**/.venv",
+    "**/env",
+    "**/.env",
+    "**/node_modules",
+    "**/__pycache__",
+]
+venv = ".venv"
+venvPath = "."
+executionEnvironments = [{ root = "src" }]
