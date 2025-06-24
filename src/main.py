@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication
-from my_package.components.button import MainLayout
+from my_package.components.main_layout import MainLayout
 from my_package.components.main_window import MainWindow
 
 #Definição do main()
