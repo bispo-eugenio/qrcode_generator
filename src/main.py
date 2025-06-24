@@ -1,15 +1,16 @@
 import sys
-from display import Display
-from my_package.components.main_window import MainWindow
 from PySide6.QtWidgets import QApplication
+from my_package.components.button import MainLayout
+from my_package.components.main_window import MainWindow
 
 #Definição do main()
 def main() -> None:
     #Instância das classes
     app = QApplication(sys.argv)
     main_window = MainWindow()
-    display = Display()
-    main_window.add_widget(display)
+    layout = MainLayout()
+    #Configurações do MainWindow
+    main_window.add_layout(layout)
     #Execução do programa
     main_window.show()
     app.exec()
