@@ -47,16 +47,6 @@ Normalmente é utilizidado
 115 px. No entanto, deixe o padrão como  300 px.
 """
 
-# =====================
-# Style do Botão QRCode
-# =====================
-
-STYLE_QRCODE_BUTTON = """
-    background-color: #0CF25D;
-    color: #FFFFFF;
-    border: 1px solid #038C3E;
-"""
-
 # ==================
 # Style do InputText
 # ==================
@@ -82,3 +72,36 @@ INPUT_SIZE_H = 40
 
 MARGIN = 5
 """Margin do InputText"""
+
+
+
+# ==================
+# Tamanho dos Botões
+# ==================
+
+WIDTH_BUTTON = 75
+HEIGHT_BUTTON = 25
+
+
+# =====================
+# Style do Botão QRCode
+# =====================
+
+STYLE_QRCODE_BUTTON = """
+    background-color: #0CF25D;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #038C3E;
+"""
+
+
+# ========================
+# Style do Botão de Limpar
+# ========================
+
+STYLE_CLEAR_BUTTON = """
+    background-color: #D92525;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #038C3E;
+"""
