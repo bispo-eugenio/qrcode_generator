@@ -88,7 +88,7 @@ HEIGHT_BUTTON = 25
 # =====================
 
 STYLE_QRCODE_BUTTON = """
-    background-color: #0CF25D;
+    background-color: #9FC131;
     color: #FFFFFF;
     font-weight: bold;
     border: 1px solid #038C3E;
@@ -101,6 +101,13 @@ STYLE_QRCODE_BUTTON = """
 
 STYLE_CLEAR_BUTTON = """
     background-color: #D92525;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #038C3E;
+"""
+
+STYLE_SAVE_BUTTON = """
+    background-color: #0CF25D;
     color: #FFFFFF;
     font-weight: bold;
     border: 1px solid #038C3E;
