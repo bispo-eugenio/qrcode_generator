@@ -1,5 +1,6 @@
-from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QLayout
-from my_package.components.constants import WIDTH, HEIGTH, STYLE_MAIN_WINDOW
+from PySide6.QtWidgets import (QMainWindow, QWidget,
+                            QHBoxLayout, QLayout, QMessageBox)
+from my_package.components.constants import WIDTH, HEIGTH
 
 class MainWindow(QMainWindow):
 
@@ -14,10 +15,10 @@ class MainWindow(QMainWindow):
 
         #Chamada de métodos 
         self._config_main_window()
-        self._style()
 
     #Configura o MainWindow
     def _config_main_window(self) -> None:
+
         self.setWindowTitle("QRCODE GENERATOR")
         self.adjustSize() #Ajustando o tamanho dos widgets
         self.setFixedSize(WIDTH, HEIGTH)
@@ -25,8 +26,10 @@ class MainWindow(QMainWindow):
     
     # ========== Métodos Adicionais da Classe ==========
 
-    def _style(self) -> None:
-        self.setStyleSheet(STYLE_MAIN_WINDOW)
-
     def add_layout(self, layout: QLayout) -> None:
+
         self._layout_h_box.addLayout(layout)
+
+    def make_message_box(self) -> QMessageBox:
+
+        return QMessageBox(self)

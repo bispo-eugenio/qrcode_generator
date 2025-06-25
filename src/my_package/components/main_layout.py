@@ -3,16 +3,20 @@ from PySide6.QtCore import Qt
 from my_package.components.button import QRCodeButton, ClearButton, SaveButton
 from my_package.components.display import Display
 from my_package.components.input_text import InputText
+from my_package.components.main_window import MainWindow
 
 class MainLayout(QVBoxLayout):
 
-    def __init__(self) -> None: #type: ignore
-        super().__init__() #type: ignore
+    def __init__(self) -> None:
+        
+        super().__init__() 
         self._display = Display()
         self._input_text = InputText()
-        self._qrcode_button = QRCodeButton(self._input_text, self._display)
+        self._window = MainWindow()
+        self._qrcode_button = QRCodeButton(self._input_text,
+                                 self._display, self._window)
         self._clear_button = ClearButton(self._input_text, self._display)
-        self._save_button = SaveButton(self._display)
+        self._save_button = SaveButton(self._display, self._window)
         self._layout_button = QHBoxLayout()
 
         self._add_widget(self._display)

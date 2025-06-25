@@ -10,11 +10,15 @@ class Display(QLabel):
         self._style()
     
     def _style(self) -> None:
+        
         self.setStyleSheet(STYLE_DISPLAY)
         self.setFixedSize(SIZE_QRCODE, SIZE_QRCODE)
 
+    # ========== Métodos Adicionais da Classe ==========
+    
     def add_image(self, qrcode_img: QPixmap) -> None:
         if not qrcode_img.isNull():
+
             self.setPixmap(qrcode_img)
             self.setAlignment(Qt.AlignmentFlag.AlignCenter)
             self.update()

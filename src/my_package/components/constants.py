@@ -5,13 +5,15 @@ from pathlib import Path
 # CAMINHO ABSOLUTO DO PROJETO
 # ===========================
 
-MAIN_PATH = Path(__file__).parents[2] 
+MAIN_PATH = Path(__file__).parents[2]
+PNG_PATH = Path(__file__).parents[3] / ".png"
+
 
 # ==================== # ====================
 
-# ===================
-# Style do MainWindow
-# ===================
+# ====================
+# Estilo do MainWindow
+# ====================
 
 STYLE_MAIN_WINDOW = """
     background-color: #034159;
@@ -27,13 +29,13 @@ WIDTH = 450
 HEIGTH = 500
 """Height do Main Window (recomendo não alterar)"""
 
-# ================
-# Style do Display
-# ================
+# =================
+# Estilo do Display
+# =================
 
 STYLE_DISPLAY = """
     background-color: #FFFFFF;
-    border: 3.5px solid #025951;
+    border: 1px solid #000000;
 """
 
 # ==================
@@ -44,17 +46,20 @@ SIZE_QRCODE = 300
 """
 Normalmente é utilizidado
 1 polegada que convertido em pixels dá 
-115 px. No entanto, deixe o padrão como  300 px.
+115X115. No entanto, deixe o padrão como  300 px. 
+(OBS: Essa constante está contida no slot() de QR Code e na classe Display,
+ a alteração de valores pode alterar o layout do MainWindow)
 """
 
-# ==================
-# Style do InputText
-# ==================
+# ===================
+# Estilo do InputText
+# ===================
 
 STYLE_INPUT_TEXT = """
     background-color: #3D3D3D;
     color: #FFFFFF;
     font-size: 15px;
+    border: 1px solid #3D3D3D;
 """
 
 # ====================
@@ -73,8 +78,6 @@ INPUT_SIZE_H = 40
 MARGIN = 5
 """Margin do InputText"""
 
-
-
 # ==================
 # Tamanho dos Botões
 # ==================
@@ -83,32 +86,36 @@ WIDTH_BUTTON = 75
 HEIGHT_BUTTON = 25
 
 
-# =====================
-# Style do Botão QRCode
-# =====================
+# ======================
+# Estilo do Botão QRCode
+# ======================
 
 STYLE_QRCODE_BUTTON = """
     background-color: #9FC131;
     color: #FFFFFF;
     font-weight: bold;
-    border: 1px solid #038C3E;
+    border: 1px solid #000000;
 """
 
 
-# ========================
-# Style do Botão de Limpar
-# ========================
+# =========================
+# Estilo do Botão de Limpar
+# =========================
 
 STYLE_CLEAR_BUTTON = """
     background-color: #D92525;
     color: #FFFFFF;
     font-weight: bold;
-    border: 1px solid #038C3E;
+    border: 1px solid #000000;
 """
+
+# =========================
+# Estilo do Botão de Salvar
+# =========================
 
 STYLE_SAVE_BUTTON = """
     background-color: #0CF25D;
     color: #FFFFFF;
     font-weight: bold;
-    border: 1px solid #038C3E;
+    border: 1px solid #000000;
 """

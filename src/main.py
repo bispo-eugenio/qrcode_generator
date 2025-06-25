@@ -5,12 +5,15 @@ from my_package.components.main_window import MainWindow
 
 #Definição do main()
 def main() -> None:
+
     #Instância das classes
     app = QApplication(sys.argv)
     main_window = MainWindow()
     layout = MainLayout()
+
     #Configurações do MainWindow
     main_window.add_layout(layout)
+    
     #Execução do programa
     main_window.show()
     app.exec()
