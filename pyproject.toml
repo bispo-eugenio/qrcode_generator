@@ -17,7 +17,7 @@ dev =["ruff", "pyright>=1.1.402",]
 
 
 [project.scripts]
-qrcode_generator = "my_package:main:main"
+qrcode_generator = "main:main"
 
 # ====================
 # Configurações do Ruff
