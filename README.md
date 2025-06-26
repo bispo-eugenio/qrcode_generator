@@ -64,9 +64,11 @@ uv add pyinstaller
 ```
 ### Fazendo o .exe:
 ```bash
-pyinstaller --name="QRCODE GENERATOR" --noconfirm --onefile --icon="src\\my_packege\\assets\\icon\\qrcode-generator.png" --noconsole --clean
+pyinstaller --name="QRCODE GENERATOR" --noconfirm --onefile --icon="src\\my_package\\assets\\icon\\qrcode-generator.ico" --noconsole --clean src/main.py
+#Usando uv
+uv run pyinstaller --name="QRCODE GENERATOR" --noconfirm --onefile --icon="src\\my_package\\assets\\icon\\qrcode-generator.ico" --noconsole --clean src/main.py
 ```
-O PyInstaller vai gerar o .exe dentro do projeto, mas caso queira editar alguma coisa recomendo dar uma olhada na própria documentação do PyInstaller
+O PyInstaller vai gerar o .exe dentro do projeto na pasta dist, mas caso queira editar alguma coisa recomendo dar uma olhada na própria documentação do PyInstaller
 
 Documentação PyInstaller: https://pyinstaller.org/en/stable/usage.html
 

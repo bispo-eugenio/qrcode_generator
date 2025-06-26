@@ -147,6 +147,6 @@ class SaveButton(QPushButton):
             msg = self._window.make_message_box()
             msg.setText(text)
             msg.setStandardButtons(msg.StandardButton.Ok)
-            msg.setWindowTitle("Informação") 
+            msg.setWindowTitle("Aviso") 
             msg.setIcon(msg.Icon.Critical)
             msg.exec() 

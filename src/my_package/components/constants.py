@@ -6,7 +6,7 @@ from pathlib import Path
 # =========================== #
 
 MAIN_PATH = Path(__file__).parents[2]
-ICON_PATH = MAIN_PATH / "my_package/assets/icon/qrcode-generator.png"
+ICON_PATH = MAIN_PATH / "my_package/assets/icon/qrcode-generator.ico"
 PNG_PATH = Path(__file__).parents[3] / ".png"
 
 
