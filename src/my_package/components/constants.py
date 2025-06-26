@@ -6,6 +6,7 @@ from pathlib import Path
 # ===========================
 
 MAIN_PATH = Path(__file__).parents[2]
+ICON_PATH = MAIN_PATH / "my_package/assets/icon/qrcode-generator.png"
 PNG_PATH = Path(__file__).parents[3] / ".png"
 
 
@@ -90,11 +91,21 @@ HEIGHT_BUTTON = 25
 # Estilo do Botão QRCode
 # ======================
 
-STYLE_QRCODE_BUTTON = """
-    background-color: #9FC131;
-    color: #FFFFFF;
-    font-weight: bold;
-    border: 1px solid #000000;
+STYLE_QRCODE_BUTTON ="""
+    QPushButton {
+        background-color: #9FC131;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: 1px solid #000000;
+    }
+    QPushButton:hover {
+        background-color: #8DAB2B;
+        color: #EFEEEE;
+    }
+    QPushButton:pressed {
+        background-color: #738C21;
+        color: #DBDBDB;
+    }
 """
 
 
@@ -103,10 +114,20 @@ STYLE_QRCODE_BUTTON = """
 # =========================
 
 STYLE_CLEAR_BUTTON = """
-    background-color: #D92525;
-    color: #FFFFFF;
-    font-weight: bold;
-    border: 1px solid #000000;
+    QPushButton{
+        background-color: #BE1D1D;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: 1px solid #000000;
+    }
+    QPushButton:hover {
+        background-color: #9D1717;
+        color: #EFEEEE;
+    }
+    QPushButton:pressed {
+        background-color: #8B1414;
+        color: #DBDBDB;
+    }
 """
 
 # =========================
@@ -114,8 +135,18 @@ STYLE_CLEAR_BUTTON = """
 # =========================
 
 STYLE_SAVE_BUTTON = """
-    background-color: #0CF25D;
-    color: #FFFFFF;
-    font-weight: bold;
-    border: 1px solid #000000;
+    QPushButton{
+        background-color: #1AD75D;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: 1px solid #000000;
+    }
+    QPushButton:hover {
+        background-color: #18B44F;
+        color: #EFEEEE;
+    }
+    QPushButton:pressed {
+        background-color: #149C44;
+        color: #EFEEEE;
+    }
 """
