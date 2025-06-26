@@ -1,47 +1,47 @@
 from pathlib import Path
 
 
-# ===========================
-# CAMINHO ABSOLUTO DO PROJETO
-# ===========================
+# =========================== #
+# CAMINHO ABSOLUTO DO PROJETO #
+# =========================== #
 
 MAIN_PATH = Path(__file__).parents[2]
 ICON_PATH = MAIN_PATH / "my_package/assets/icon/qrcode-generator.png"
 PNG_PATH = Path(__file__).parents[3] / ".png"
 
 
-# ==================== # ====================
+# ==================================================================================== #
 
-# ====================
-# Estilo do MainWindow
-# ====================
+# ==================== #
+# Estilo do MainWindow #
+# ==================== #
 
 STYLE_MAIN_WINDOW = """
     background-color: #034159;
     border: 3.5px solid #025951;
 """
 
-# =====================
-# Tamanho da MainWindow
-# =====================
+# ===================== #
+# Tamanho da MainWindow #
+# ===================== #
 
 WIDTH = 450
 """Width do Main Window (recomendo não alterar)"""
 HEIGTH = 500
 """Height do Main Window (recomendo não alterar)"""
 
-# =================
-# Estilo do Display
-# =================
+# ================= #
+# Estilo do Display #
+# ================= #
 
 STYLE_DISPLAY = """
     background-color: #FFFFFF;
     border: 1px solid #000000;
 """
 
-# ==================
-# Tamanho do QR Code
-# ==================
+# ================== #
+# Tamanho do QR Code #
+# ================== #
 
 SIZE_QRCODE = 300
 """
@@ -52,9 +52,9 @@ Normalmente é utilizidado
  a alteração de valores pode alterar o layout do MainWindow)
 """
 
-# ===================
-# Estilo do InputText
-# ===================
+# =================== #
+# Estilo do InputText #
+# =================== #
 
 STYLE_INPUT_TEXT = """
     background-color: #3D3D3D;
@@ -63,33 +63,33 @@ STYLE_INPUT_TEXT = """
     border: 1px solid #3D3D3D;
 """
 
-# ====================
-# Tamanho do InputText
-# ====================
+# ==================== #
+# Tamanho do InputText #
+# ==================== #
 
 INPUT_SIZE_W = 300 
 """Width do input_text (redomendo não alterar)""" 
 INPUT_SIZE_H = 40
 """Height do input_text (redomendo não alterar)""" 
 
-# ==================
-# MARGIN do InputText
-# ==================
+# =================== #
+# Margin do InputText #
+# =================== #
 
-MARGIN = 5
+MARGIN_INPUT_TEXT = 5
 """Margin do InputText"""
 
-# ==================
-# Tamanho dos Botões
-# ==================
+# ================== #
+# Tamanho dos Botões #
+# ================== #
 
 WIDTH_BUTTON = 75
 HEIGHT_BUTTON = 25
 
 
-# ======================
-# Estilo do Botão QRCode
-# ======================
+# ====================== #
+# Estilo do Botão QRCode #
+# ====================== #
 
 STYLE_QRCODE_BUTTON ="""
     QPushButton {
@@ -109,9 +109,9 @@ STYLE_QRCODE_BUTTON ="""
 """
 
 
-# =========================
-# Estilo do Botão de Limpar
-# =========================
+# ========================= #
+# Estilo do Botão de Limpar #
+# ========================= #
 
 STYLE_CLEAR_BUTTON = """
     QPushButton{
@@ -130,9 +130,9 @@ STYLE_CLEAR_BUTTON = """
     }
 """
 
-# =========================
-# Estilo do Botão de Salvar
-# =========================
+# ========================= #
+# Estilo do Botão de Salvar #
+# ========================= #
 
 STYLE_SAVE_BUTTON = """
     QPushButton{

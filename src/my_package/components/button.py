@@ -71,7 +71,7 @@ class QRCodeButton(QPushButton):
         if isinstance(self._window, MainWindow):
 
             msg = self._window.make_message_box()
-            msg.setText(text) #O que dizer 
+            msg.setText(text) 
             msg.setStandardButtons(msg.StandardButton.Ok)
             msg.setWindowTitle("Informação") #titulo do aviso
             msg.setIcon(msg.Icon.Information)
@@ -145,8 +145,8 @@ class SaveButton(QPushButton):
     def _critical_erro(self, text: str) -> None:
         if isinstance(self._window, MainWindow):
             msg = self._window.make_message_box()
-            msg.setText(text) #O que dizer 
+            msg.setText(text)
             msg.setStandardButtons(msg.StandardButton.Ok)
-            msg.setWindowTitle("Informação") #titulo do aviso
-            msg.setIcon(msg.Icon.Information)
+            msg.setWindowTitle("Informação") 
+            msg.setIcon(msg.Icon.Critical)
             msg.exec() 

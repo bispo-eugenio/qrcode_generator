@@ -5,8 +5,8 @@ from my_package.components.constants import WIDTH, HEIGTH, ICON_PATH
 
 class MainWindow(QMainWindow):
 
-    def __init__(self, *args, **kwargs) -> None: #type: ignore
-        super().__init__(*args, **kwargs) #type: ignore
+    def __init__(self) -> None:
+        super().__init__()
 
         #Propriedades
         self.central = QWidget()

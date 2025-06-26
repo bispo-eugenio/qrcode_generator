@@ -20,7 +20,7 @@ class MainLayout(QVBoxLayout):
         self._layout_button = QHBoxLayout()
 
         self._add_widget(self._display)
-        self._add_widget(self._input_text) #type: ignore
+        self._add_widget(self._input_text)
         self._add_layout(self._layout_button)
         self._add_widget_layout_button(self._save_button)
         self._add_widget_layout_button(self._qrcode_button)

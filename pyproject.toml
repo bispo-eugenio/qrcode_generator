@@ -19,17 +19,17 @@ dev =["ruff", "pyright>=1.1.402",]
 [project.scripts]
 qrcode_generator = "main:main"
 
-# ====================
-# Configurações do Ruff
-# ====================
+# ===================== #
+# Configurações do Ruff #
+# ===================== #
 
 [tool.ruff]
-line-length = 88 #Tamanho da linha
-target-version = "py313" #Versão do Python
-fix = true #Correção automática durante a execução
-show-fixes = true #Mostra o erros corrigidos
-indent-width = 4 #Número de espaços por nível de recuo
-exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__"] #Ruff não verifica
+line-length = 88 
+target-version = "py313"
+fix = true
+show-fixes = true
+indent-width = 4 
+exclude = ["venv", ".venv", "env", ".env", "node_modules", "__pycache__"]
 
 [tool.ruff.lint]
 select = [
@@ -55,9 +55,9 @@ known-first-party = ["my_package"]
 [tool.ruff.lint.per-file-ignores]
 "tests/**/*.py" = ["ANN201"]
 
-# ====================
-# Configurações do Pyright
-# ====================
+# ======================== #
+# Configurações do Pyright #
+# ======================== #
 
 [tool.pyright]
 typeCheckingMode = "strict"
