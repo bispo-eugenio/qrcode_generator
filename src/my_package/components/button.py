@@ -49,8 +49,8 @@ class QRCodeButton(QPushButton):
                 text = self._input.text()
                 #Gera o qr code
                 generic_qrcode = qrcode.make(text)
-                #Convert pil.PilImage em image.image
-                img = generic_qrcode.get_image()
+                #De PIL.PilImage pega PIL.image.image
+                img = generic_qrcode.get_image() #get_image() -> class BaseImage 
                 #Converte o qr code em QImage
                 qimage = ImageQt(img)
                 #Retorna o QImage como QPixmap
